@@ -1,0 +1,25 @@
+{
+    "name": "Hello",
+    "version": "1.0",
+    "author": "nbittich",
+    "url": "https://github.com/nbittich/hello-responder",
+    "license": "AGPL-V3",
+    "description": "Say hello",
+    "dataTypeList": [
+        "thehive:case",
+        "thehive:alert",
+        "thehive:case_task"
+    ],
+    "command": "hello-responder/hello.py",
+    "baseConfig": "Hello",
+    "configurationItems": [
+        {
+            "name": "message",
+            "description": "Message to output",
+            "type": "string",
+            "multi": false,
+            "required": true,
+            "defaultValue": "Hello, world!"
+        }
+    ]
+}
