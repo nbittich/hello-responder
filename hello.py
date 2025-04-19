@@ -4,7 +4,7 @@
 from cortexutils.responder import Responder
 
 
-class Mailer(Responder):
+class Hello(Responder):
     def __init__(self):
         Responder.__init__(self)
         self.message = self.get_param("config.message", "Hello, world!")
@@ -20,4 +20,4 @@ class Mailer(Responder):
 
 
 if __name__ == "__main__":
-    Mailer().run()
+    Hello().run()
