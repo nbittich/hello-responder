@@ -13,7 +13,7 @@ class Hello(Responder):
         Responder.run(self)
 
         title = self.get_param("data.title", None, "title is missing")
-        self.report({"message": f"{self.messgae} - {title}"})
+        self.report({"message": f"{self.message} - {title}"})
 
     def operations(self, raw):
         return [self.build_operation("AddTagToCase", tag="we said hello world :)")]
